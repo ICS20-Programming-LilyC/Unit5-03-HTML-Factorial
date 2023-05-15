@@ -10,18 +10,18 @@ body {
 }
 
 h1 {
-  background-color: rgb(181 131 74);
+  background-color: rgb(181, 74, 74);
   color: hsl(88deg 38% 15%);
   padding: 40px;
   text-align: center;
 }
 
 p {
-  background-color: #283618;
-  color: #fefae0;
+  background-color: #8c9484;
+  color: #641e0c;
 }
 
 #results {
-  background-color: #283618;
-  color: #b5834a;
+  background-color: #853614;
+  color: #383838;
 }
