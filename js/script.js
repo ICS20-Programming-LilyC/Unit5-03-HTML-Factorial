@@ -26,7 +26,7 @@ function numSent() {
     document.getElementById("results").innerHTML = "Please enter a positive number.";
     return;
   }
-
+    
   //Else: let the do-while loop execute to calculate the factorial
   else {
 
