@@ -8,35 +8,36 @@
 
 function numSent() {
 
-  //initializing variables
+  // Initializing variables counter and factorial result. 
   let counter = 1;
   let factorialResult = 1;
   
-  //getting user input for the variable userNum
-  let userNum = parseInt(document.getElementById("number").value);
+  // Getting user input for the variable userNumber
+  let userNumber =
+    parseInt(document.getElementById("number").value);
 
-  //If: if user enters nothing
-  if (isNaN(userNum)) {
+  // If, the user enters nothing, then display "Please enter a valid number."
+  if (isNaN(userNumber)) {
     document.getElementById("results").innerHTML = "Please enter a valid number.";
     return;
   }
 
-  //Else if: if user enters a negative number
-  else if (userNum < 0) {
+  // Else if the user enters a negative number, display "Please enter a positive number".
+  else if (userNumber < 0) {
     document.getElementById("results").innerHTML = "Please enter a positive number.";
     return;
   }
     
-  //Else: let the do-while loop execute to calculate the factorial
+  // Else, allow the DO...WHILE loop to calculate the factorial.
   else {
 
-    //using a do... while loop to find factorial
+    // Using a DO...WHILE loop to find factorial. 
     do {
       factorialResult = factorialResult * counter;
       counter = counter + 1;
-    } while (counter <= userNum);
+    } while (counter <= userNumber);
   }
 
-  //display factorial back to screen
-  document.getElementById("results").innerHTML = "The factorial of your inputted number (!" + userNum + ") = " + factorialResult + ".";
+  // Display factorial back to screen
+  document.getElementById("results").innerHTML = "The factorial of your inputted number (!" + userNumber + ") = " + factorialResult + ".";
 }
